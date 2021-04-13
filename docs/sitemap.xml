@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>/404.html</loc>
+            <loc>/blog-theme/404.html</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -10,7 +10,7 @@
         </url>
     
         <url>
-            <loc>/about/</loc>
+            <loc>/blog-theme/about/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -18,7 +18,7 @@
         </url>
     
         <url>
-            <loc>/about/</loc>
+            <loc>/blog-theme/about/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -26,7 +26,7 @@
         </url>
     
         <url>
-            <loc>/category/blog/</loc>
+            <loc>/blog-theme/category/blog/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -34,7 +34,7 @@
         </url>
     
         <url>
-            <loc>/category/code/</loc>
+            <loc>/blog-theme/category/code/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -42,7 +42,7 @@
         </url>
     
         <url>
-            <loc>/contact/</loc>
+            <loc>/blog-theme/contact/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -50,7 +50,7 @@
         </url>
     
         <url>
-            <loc>/category/css/</loc>
+            <loc>/blog-theme/category/css/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -58,7 +58,7 @@
         </url>
     
         <url>
-            <loc>/category/diet/</loc>
+            <loc>/blog-theme/category/diet/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -66,7 +66,7 @@
         </url>
     
         <url>
-            <loc>/feed.xml</loc>
+            <loc>/blog-theme/feed.xml</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -74,7 +74,7 @@
         </url>
     
         <url>
-            <loc>/</loc>
+            <loc>/blog-theme/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -82,7 +82,7 @@
         </url>
     
         <url>
-            <loc>/category/life/</loc>
+            <loc>/blog-theme/category/life/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -90,7 +90,7 @@
         </url>
     
         <url>
-            <loc>/contact/message-sent/</loc>
+            <loc>/blog-theme/contact/message-sent/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -98,7 +98,7 @@
         </url>
     
         <url>
-            <loc>/category/music/</loc>
+            <loc>/blog-theme/category/music/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -106,7 +106,7 @@
         </url>
     
         <url>
-            <loc>/assets/css/preview.css</loc>
+            <loc>/blog-theme/blog-theme/assets/css/preview.css</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -114,7 +114,7 @@
         </url>
     
         <url>
-            <loc>/search.json</loc>
+            <loc>/blog-theme/search.json</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -122,7 +122,7 @@
         </url>
     
         <url>
-            <loc>/sitemap.xml</loc>
+            <loc>/blog-theme/sitemap.xml</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -130,7 +130,7 @@
         </url>
     
         <url>
-            <loc>/staff/</loc>
+            <loc>/blog-theme/staff/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -138,7 +138,7 @@
         </url>
     
         <url>
-            <loc>/assets/css/styles.css</loc>
+            <loc>/blog-theme/blog-theme/assets/css/styles.css</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -146,7 +146,7 @@
         </url>
     
         <url>
-            <loc>/tags/</loc>
+            <loc>/blog-theme/tags/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -154,7 +154,7 @@
         </url>
     
         <url>
-            <loc>/category/tips/</loc>
+            <loc>/blog-theme/category/tips/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -162,7 +162,7 @@
         </url>
     
         <url>
-            <loc>/category/travel/</loc>
+            <loc>/blog-theme/category/travel/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -170,7 +170,7 @@
         </url>
     
         <url>
-            <loc>/category/tutorial/</loc>
+            <loc>/blog-theme/category/tutorial/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -178,7 +178,7 @@
         </url>
     
         <url>
-            <loc>/category/work/</loc>
+            <loc>/blog-theme/category/work/</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
@@ -187,119 +187,119 @@
     
     
         <url>
-            <loc>/hero/view-all/</loc>
+            <loc>/blog-theme/hero/view-all/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2019-05-16</lastmod>
         </url>
     
         <url>
-            <loc>/hero/2/</loc>
+            <loc>/blog-theme/hero/2/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2019-05-16</lastmod>
         </url>
     
         <url>
-            <loc>/hero/</loc>
+            <loc>/blog-theme/hero/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2019-05-16</lastmod>
         </url>
     
         <url>
-            <loc>/why-books-should-be-your-priority/</loc>
+            <loc>/blog-theme/schema-management-and-serialization-with-apache-avro/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2018-11-22</lastmod>
         </url>
     
         <url>
-            <loc>/the-quick-brown-fox-jumps-over-a-lazy-dog/</loc>
+            <loc>/blog-theme/the-quick-brown-fox-jumps-over-a-lazy-dog/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2018-10-09</lastmod>
         </url>
     
         <url>
-            <loc>/a-wonderful-serenity-has-taken-possession-of-my-entire-soul/</loc>
+            <loc>/blog-theme/a-wonderful-serenity-has-taken-possession-of-my-entire-soul/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2018-07-20</lastmod>
         </url>
     
         <url>
-            <loc>/candy-candies-candy/</loc>
+            <loc>/blog-theme/candy-candies-candy/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2018-04-21</lastmod>
         </url>
     
         <url>
-            <loc>/trust-me-it-will-work/</loc>
+            <loc>/blog-theme/trust-me-it-will-work/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2018-03-12</lastmod>
         </url>
     
         <url>
-            <loc>/how-to-turn-your-dog-into-a-jedi-master/</loc>
+            <loc>/blog-theme/how-to-turn-your-dog-into-a-jedi-master/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2018-02-03</lastmod>
         </url>
     
         <url>
-            <loc>/let-flexbox-work-for-you-or-perish/</loc>
+            <loc>/blog-theme/let-flexbox-work-for-you-or-perish/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2017-08-14</lastmod>
         </url>
     
         <url>
-            <loc>/a-star-has-fallen-from-the-sky-and-the-cat-ate-it/</loc>
+            <loc>/blog-theme/a-star-has-fallen-from-the-sky-and-the-cat-ate-it/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2017-08-07</lastmod>
         </url>
     
         <url>
-            <loc>/smoke-alert/</loc>
+            <loc>/blog-theme/smoke-alert/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2017-07-29</lastmod>
         </url>
     
         <url>
-            <loc>/do-you-believe-that-a-spider-can-dance/</loc>
+            <loc>/blog-theme/do-you-believe-that-a-spider-can-dance/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2017-06-08</lastmod>
         </url>
     
         <url>
-            <loc>/a-cook-cries-in-the-rain-at-night/</loc>
+            <loc>/blog-theme/a-cook-cries-in-the-rain-at-night/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2017-06-04</lastmod>
         </url>
     
         <url>
-            <loc>/grab-your-band-and-get-out/</loc>
+            <loc>/blog-theme/grab-your-band-and-get-out/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2017-05-11</lastmod>
         </url>
     
         <url>
-            <loc>/passion-is-dangerous-go-for-it/</loc>
+            <loc>/blog-theme/passion-is-dangerous-go-for-it/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2015-09-06</lastmod>
         </url>
     
         <url>
-            <loc>/birds-can-fly-but-this-you-knew-already/</loc>
+            <loc>/blog-theme/birds-can-fly-but-this-you-knew-already/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2010-09-10</lastmod>
@@ -307,7 +307,13 @@
     
     
         <url>
-            <loc>/authors/thiagorossener/</loc>
+            <loc>/blog-theme/authors/kellygajewski/</loc>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+        </url>
+    
+        <url>
+            <loc>/blog-theme/authors/wesleytanner/</loc>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
         </url>
