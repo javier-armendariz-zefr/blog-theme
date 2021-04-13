@@ -22,7 +22,7 @@ layout: main
             <!-- <div class="pixels"></div> -->
             <div class="gradient">
                 <video preload="" autoplay="" loop="" muted="" data-object-fit="cover">
-                    <source src="https://zefr.com/assets/general/Videos/8.14.19-plex_3.mp4" type="video/mp4">
+                    <source src="https://zefr.com/blog-theme/assets/general/Videos/8.14.19-plex_3.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="content">
@@ -57,19 +57,19 @@ layout: main
                     <a class="cover" href="{{ post.url | prepend: site.baseurl }}">
                         {% include loader.html %}
                         {% if post.optimized_image %}
-                            <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}" class="preload">
+                            <img src="/blog-theme/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}" class="preload">
                             <noscript>
                                 <img src="{{ post.optimized_image }}" width="100%">
                             </noscript>
                         {% elsif post.image %}
-                            <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.image }}" class="preload">
+                            <img src="/blog-theme/assets/img/placeholder.png" width="100%" data-url="{{ post.image }}" class="preload">
                             <noscript>
                                 <img src="{{ post.image }}" width="100%">
                             </noscript>
                         {% else %}
-                            <img src="/assets/img/placeholder.png" width="100%" data-url="/assets/img/off.jpg" class="preload">
+                            <img src="/blog-theme/assets/img/placeholder.png" width="100%" data-url="/blog-theme/assets/img/off.jpg" class="preload">
                             <noscript>
-                                <img src="/assets/img/off.jpg" width="100%">
+                                <img src="/blog-theme/assets/img/off.jpg" width="100%">
                             </noscript>
                         {% endif %}
                         {% include new-post-tag.html date=post.date %}
@@ -173,7 +173,7 @@ layout: main
                     "url": "{{ site.url }}{{site.baseurl}}/",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "{{ site.url }}{{site.baseurl}}/assets/img/blog-image.png",
+                        "url": "{{ site.url }}{{site.baseurl}}/blog-theme/assets/img/blog-image.png",
                         "width": "600",
                         "height": "315"
                     }

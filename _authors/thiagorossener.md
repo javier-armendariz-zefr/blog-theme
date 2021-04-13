@@ -1,6 +1,6 @@
 ---
 layout: author
-photo: /assets/img/uploads/profile.png
+photo: /blog-theme/assets/img/uploads/profile.png
 name: thiagorossener
 display_name: Thiago Rossener
 position: Chief Editor
@@ -12,4 +12,3 @@ instagram_username: thiagorossener
 linkedin_username: thiagorossener
 medium_username: thiagorossener
 ---
-

@@ -28,7 +28,7 @@ A theme for Jekyll inspired by Netflix panel for who loves movies and series and
 
 - [Live Search](https://github.com/thiagorossener/jekflix-template/wiki/Features#live-search)
 - [Estimated Reading Time](https://github.com/thiagorossener/jekflix-template/wiki/Features#estimated-reading-time)
-- [Reading Progress Bar](https://github.com/thiagorossener/jekflix-template/wiki/Features#reading-progress-bar) *(optional)*
+- [Reading Progress Bar](https://github.com/thiagorossener/jekflix-template/wiki/Features#reading-progress-bar) _(optional)_
 - ["New Post" tag](https://github.com/thiagorossener/jekflix-template/wiki/Features#new-post-tag)
 - [Load images on demand](https://github.com/thiagorossener/jekflix-template/wiki/Features#load-images-on-demand)
 - [Push Menu](https://github.com/thiagorossener/jekflix-template/wiki/Features#push-menu)
@@ -39,16 +39,16 @@ A theme for Jekyll inspired by Netflix panel for who loves movies and series and
 - [Contact page](https://github.com/thiagorossener/jekflix-template/wiki/Features#contact-page)
 - [404 error page](https://github.com/thiagorossener/jekflix-template/wiki/Features#404-error-page)
 - [Feed RSS](https://github.com/thiagorossener/jekflix-template/wiki/Features#feed-rss)
-- [Disqus](https://github.com/thiagorossener/jekflix-template/wiki/Features#disqus) *(optional)*
-- [Featured post](https://github.com/thiagorossener/jekflix-template/wiki/Features#featured-post) *(optional)*
-- [Home page pagination](https://github.com/thiagorossener/jekflix-template/wiki/Features#home-page-pagination) *(optional)*
-- [Posts sidebar](https://github.com/thiagorossener/jekflix-template/wiki/Features#posts-sidebar) *(optional)*
-- [Paginated posts](https://github.com/thiagorossener/jekflix-template/wiki/Features#paginated-posts) *(optional)*
-- ["Before you go" modal](https://github.com/thiagorossener/jekflix-template/wiki/Features#before-you-go-modal) *(optional)*
+- [Disqus](https://github.com/thiagorossener/jekflix-template/wiki/Features#disqus) _(optional)_
+- [Featured post](https://github.com/thiagorossener/jekflix-template/wiki/Features#featured-post) _(optional)_
+- [Home page pagination](https://github.com/thiagorossener/jekflix-template/wiki/Features#home-page-pagination) _(optional)_
+- [Posts sidebar](https://github.com/thiagorossener/jekflix-template/wiki/Features#posts-sidebar) _(optional)_
+- [Paginated posts](https://github.com/thiagorossener/jekflix-template/wiki/Features#paginated-posts) _(optional)_
+- ["Before you go" modal](https://github.com/thiagorossener/jekflix-template/wiki/Features#before-you-go-modal) _(optional)_
 - [Post recommendation](https://github.com/thiagorossener/jekflix-template/wiki/Features#post-recommendation)
 - [Netlify CMS ready](https://github.com/thiagorossener/jekflix-template/wiki/Features#netlify-cms-ready)
 - [Translations](https://github.com/thiagorossener/jekflix-template/wiki/setup#translations) **new!**
-- [Math Expressions](https://github.com/thiagorossener/jekflix-template/wiki/Features#math-expressions) *(optional)* **new!**
+- [Math Expressions](https://github.com/thiagorossener/jekflix-template/wiki/Features#math-expressions) _(optional)_ **new!**
 
 ## SEO
 
@@ -86,7 +86,7 @@ $ gem install jekflix
 
 ### Theme Colors
 
-Create the file `/assets/css/styles.scss` and add:
+Create the file `/blog-theme/assets/css/styles.scss` and add:
 
 ```
 ---
@@ -246,10 +246,12 @@ Use the [Front Matter properties](https://github.com/thiagorossener/jekflix-temp
 - Changed from Stylus to SASS
 
 ### v2.0.1
+
 - Fixed bugs
 - Optimized to support disabled JS
 
 ### v2.0.0
+
 - Added optional [sidebar](https://github.com/thiagorossener/jekflix-template/wiki/Features#posts-sidebar)
 - Added optional [Featured post](https://github.com/thiagorossener/jekflix-template/wiki/features#featured-post)
 - Added optional ["Before you go" modal](https://github.com/thiagorossener/jekflix-template/wiki/features#before-you-go-modal)
@@ -265,10 +267,12 @@ Use the [Front Matter properties](https://github.com/thiagorossener/jekflix-temp
 - Minor design updates
 
 ### v1.0.1
+
 - Fixed bugs
 - Upgraded to Gulp 4
 
 ### v1.0.0
+
 - Initial release
 
 ## Questions?
@@ -281,4 +285,4 @@ File a [GitHub issue](https://github.com/thiagorossener/jekflix-template/issues/
 
 ## License
 
-*Jekflix Template* is available under the MIT license. See the [LICENSE](https://github.com/thiagorossener/jekflix-template/blob/master/LICENSE) file for more info.
+_Jekflix Template_ is available under the MIT license. See the [LICENSE](https://github.com/thiagorossener/jekflix-template/blob/master/LICENSE) file for more info.

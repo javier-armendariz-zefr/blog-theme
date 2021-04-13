@@ -1,25 +1,25 @@
-let gulp         = require('gulp'),
-    concat       = require('gulp-concat'),
-    imagemin     = require('gulp-imagemin'),
-    include      = require('gulp-include'),
-    plumber      = require('gulp-plumber'),
-    rename       = require('gulp-rename'),
-    sourcemaps   = require('gulp-sourcemaps'),
-    uglify       = require('gulp-uglify'),
-    yaml         = require('gulp-yaml'),
-    browserSync  = require('browser-sync'),
-    cp           = require('child_process'),
-    del          = require('del'),
-    fs           = require('fs'),
-    jsonSass     = require('json-sass'),
-    source       = require('vinyl-source-stream');
+let gulp = require("gulp"),
+  concat = require("gulp-concat"),
+  imagemin = require("gulp-imagemin"),
+  include = require("gulp-include"),
+  plumber = require("gulp-plumber"),
+  rename = require("gulp-rename"),
+  sourcemaps = require("gulp-sourcemaps"),
+  uglify = require("gulp-uglify"),
+  yaml = require("gulp-yaml"),
+  browserSync = require("browser-sync"),
+  cp = require("child_process"),
+  del = require("del"),
+  fs = require("fs"),
+  jsonSass = require("json-sass"),
+  source = require("vinyl-source-stream");
 
 /**
  * Notify
- * 
+ *
  * Show a notification in the browser's corner.
- * 
- * @param {*} message 
+ *
+ * @param {*} message
  */
 function notify(message) {
   browserSync.notify(message);
@@ -27,42 +27,43 @@ function notify(message) {
 
 /**
  * Config Task
- * 
+ *
  * Build the main YAML config file.
  */
 function config() {
-  return gulp.src('src/yml/_config.yml')
+  return gulp
+    .src("src/yml/_config.yml")
     .pipe(include())
-    .on('error', console.error)
-    .pipe(gulp.dest('./'));
+    .on("error", console.error)
+    .pipe(gulp.dest("./"));
 }
 
 /**
  * Jekyll Task
- * 
+ *
  * Build the Jekyll Site.
- * 
- * @param {*} done 
+ *
+ * @param {*} done
  */
 function jekyll(done) {
-  notify('Building Jekyll...');
+  notify("Building Jekyll...");
   let bundle = process.platform === "win32" ? "bundle.bat" : "bundle";
   return cp
-    .spawn(bundle, ['exec', 'jekyll build'], { stdio: 'inherit' })
-    .on('close', done);
+    .spawn(bundle, ["exec", "jekyll build"], { stdio: "inherit" })
+    .on("close", done);
 }
 
 /**
  * Server Task
- * 
+ *
  * Launch server using BrowserSync.
- * 
- * @param {*} done 
+ *
+ * @param {*} done
  */
 function server(done) {
   browserSync({
     server: {
-      baseDir: '_site'
+      baseDir: "_site"
     }
   });
   done();
@@ -70,127 +71,148 @@ function server(done) {
 
 /**
  * Reload Task
- * 
+ *
  * Reload page with BrowserSync.
- * 
- * @param {*} done 
+ *
+ * @param {*} done
  */
 function reload(done) {
-  notify('Reloading...');
+  notify("Reloading...");
   browserSync.reload();
   done();
 }
 
 /**
  * Theme Tasks
- * 
+ *
  * These three tasks are responsible for:
  * 1. Converting src/yml/theme.yml to src/tmp/theme.json
  * 2. Converting src/tmp/theme.json to _sass/_theme.scss
  * 3. Deleting src/tmp
- * 
+ *
  * With these tasks we can apply the theme colors to SVGs and CSS elements using
  * just the src/yml/theme.yml file.
  */
 
 function yamlTheme() {
-  return gulp.src('src/yml/theme.yml')
-    .pipe(yaml({ schema: 'DEFAULT_SAFE_SCHEMA' }))
-    .pipe(gulp.dest('src/tmp/'));
+  return gulp
+    .src("src/yml/theme.yml")
+    .pipe(yaml({ schema: "DEFAULT_SAFE_SCHEMA" }))
+    .pipe(gulp.dest("src/tmp/"));
 }
 
 function jsonTheme() {
-  return fs.createReadStream('src/tmp/theme.json')
-    .pipe(jsonSass({
-      prefix: '$theme: ',
-    }))
-    .pipe(source('src/tmp/theme.json'))
-    .pipe(rename('_sass/_theme.scss'))
-    .pipe(gulp.dest('./'));
+  return fs
+    .createReadStream("src/tmp/theme.json")
+    .pipe(
+      jsonSass({
+        prefix: "$theme: "
+      })
+    )
+    .pipe(source("src/tmp/theme.json"))
+    .pipe(rename("_sass/_theme.scss"))
+    .pipe(gulp.dest("./"));
 }
 
 function cleanTheme() {
-  return del(['src/tmp']);
+  return del(["src/tmp"]);
 }
 
 const theme = gulp.series(yamlTheme, jsonTheme, cleanTheme);
 
 /**
  * Main JS Task
- * 
+ *
  * All regular .js files are collected, minified and concatonated into one
  * single scripts.min.js file (and sourcemap)
  */
 function mainJs() {
-  notify('Building JS files...');
-  return gulp.src('src/js/main/**/*.js')
+  notify("Building JS files...");
+  return gulp
+    .src("src/js/main/**/*.js")
     .pipe(sourcemaps.init())
     .pipe(uglify())
-    .pipe(concat('scripts.min.js'))
+    .pipe(concat("scripts.min.js"))
     .pipe(plumber())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('_site/assets/js/'))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("_site/blog-theme/assets/js/"))
     .pipe(browserSync.reload({ stream: true }))
-    .pipe(gulp.dest('assets/js'));
+    .pipe(gulp.dest("assets/js"));
 }
 
 /**
  * Preview JS Task
- * 
+ *
  * Copy preview JS files to the assets folder.
  */
 function previewJs() {
-  notify('Copying preview files...');
-  return gulp.src('src/js/preview/**/*.*')
-    .pipe(gulp.dest('assets/js/'));
+  notify("Copying preview files...");
+  return gulp.src("src/js/preview/**/*.*").pipe(gulp.dest("assets/js/"));
 }
 
 /**
  * JavaScript Task
- * 
+ *
  * Run all the JS related tasks.
  */
 const js = gulp.parallel(mainJs, previewJs);
 
 /**
  * Images Task
- * 
+ *
  * All images are optimized and copied to assets folder.
  */
 function images() {
-  notify('Copying image files...');
-  return gulp.src('src/img/**/*.{jpg,png,gif,svg}')
+  notify("Copying image files...");
+  return gulp
+    .src("src/img/**/*.{jpg,png,gif,svg}")
     .pipe(plumber())
-    .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
-    .pipe(gulp.dest('assets/img/'));
+    .pipe(
+      imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })
+    )
+    .pipe(gulp.dest("assets/img/"));
 }
 
 /**
  * Watch Task
- * 
+ *
  * Watch files to run proper tasks.
  */
 function watch() {
   // Watch YAML files for changes & recompile
-  gulp.watch(['src/yml/*.yml', '!src/yml/theme.yml'], gulp.series(config, jekyll, reload));
+  gulp.watch(
+    ["src/yml/*.yml", "!src/yml/theme.yml"],
+    gulp.series(config, jekyll, reload)
+  );
 
   // Watch theme file for changes, rebuild styles & recompile
-  gulp.watch(['src/yml/theme.yml'], gulp.series(theme, config, jekyll, reload));
+  gulp.watch(["src/yml/theme.yml"], gulp.series(theme, config, jekyll, reload));
 
   // Watch SASS files for changes & rebuild styles
-  gulp.watch(['_sass/**/*.scss'], gulp.series(jekyll, reload));
+  gulp.watch(["_sass/**/*.scss"], gulp.series(jekyll, reload));
 
   // Watch JS files for changes & recompile
-  gulp.watch('src/js/main/**/*.js', mainJs);
+  gulp.watch("src/js/main/**/*.js", mainJs);
 
   // Watch preview JS files for changes, copy files & reload
-  gulp.watch('src/js/preview/**/*.js', gulp.series(previewJs, reload));
+  gulp.watch("src/js/preview/**/*.js", gulp.series(previewJs, reload));
 
   // Watch images for changes, optimize & recompile
-  gulp.watch('src/img/**/*', gulp.series(images, config, jekyll, reload));
+  gulp.watch("src/img/**/*", gulp.series(images, config, jekyll, reload));
 
   // Watch html/md files, rebuild config, run Jekyll & reload BrowserSync
-  gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_posts/*', '_authors/*', 'pages/*', 'category/*'], gulp.series(config, jekyll, reload));
+  gulp.watch(
+    [
+      "*.html",
+      "_includes/*.html",
+      "_layouts/*.html",
+      "_posts/*",
+      "_authors/*",
+      "pages/*",
+      "category/*"
+    ],
+    gulp.series(config, jekyll, reload)
+  );
 }
 
 /**
@@ -203,11 +225,16 @@ function watch() {
  * - Compile the Jekyll site
  * - Launch BrowserSync & watch files
  */
-exports.default = gulp.series(gulp.parallel(js, theme, images), config, jekyll, gulp.parallel(server, watch));
+exports.default = gulp.series(
+  gulp.parallel(js, theme, images),
+  config,
+  jekyll,
+  gulp.parallel(server, watch)
+);
 
 /**
  * Build Task
- * 
+ *
  * Running just `gulp build` will:
  * - Compile the theme, SASS and JavaScript files
  * - Optimize and copy images to its folder
