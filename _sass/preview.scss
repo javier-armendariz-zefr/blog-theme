@@ -222,7 +222,7 @@ body {
       font-size: rem(17px);
       color: rgba(0, 0, 0, 0.6);
       margin: 0;
-      
+
       @include media(">=sm") {
         font-size: rem(20px);
       }

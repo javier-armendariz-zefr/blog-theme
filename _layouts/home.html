@@ -54,37 +54,37 @@ layout: main
                     </a>
                 </span> -->
                 <div class="box-body">
-                    <a class="cover" href="{{ post.url | prepend: site.baseurl }}">
+                    <a class="cover" href="{{ post.url | prepend: site.relative_url }}">
                         {% include loader.html %}
                         {% if post.optimized_image %}
-                            <img src="/blog-theme/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}" class="preload">
+                            <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}" class="preload">
                             <noscript>
                                 <img src="{{ post.optimized_image }}" width="100%">
                             </noscript>
                         {% elsif post.image %}
-                            <img src="/blog-theme/assets/img/placeholder.png" width="100%" data-url="{{ post.image }}" class="preload">
+                            <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.image }}" class="preload">
                             <noscript>
                                 <img src="{{ post.image }}" width="100%">
                             </noscript>
                         {% else %}
-                            <img src="/blog-theme/assets/img/placeholder.png" width="100%" data-url="/blog-theme/assets/img/off.jpg" class="preload">
+                            <img src="/assets/img/placeholder.png" width="100%" data-url="/assets/img/off.jpg" class="preload">
                             <noscript>
-                                <img src="/blog-theme/assets/img/off.jpg" width="100%">
+                                <img src="/assets/img/off.jpg" width="100%">
                             </noscript>
                         {% endif %}
                         {% include new-post-tag.html date=post.date %}
-                        {% include read-icon.html %}
+                        <!-- {% include read-icon.html %} -->
                     </a>
                     <div class="box-info">
                         <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
                             {% include date.html date=post.date %}
                         </time>
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        <a class="post-link" href="{{ post.url | prepend: site.relative_url }}">
                             <h2 class="post-title">
                                 {{ post.title }}
                             </h2>
                         </a>
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        <a class="post-link" href="{{ post.url | prepend: site.relative_url }}">
                             <p class="description">{{ post.description }}</p>
                         </a>
                         <div class="tags">
@@ -173,7 +173,7 @@ layout: main
                     "url": "{{ site.url }}{{site.baseurl}}/",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "{{ site.url }}{{site.baseurl}}/blog-theme/assets/img/blog-image.png",
+                        "url": "{{ site.url }}{{site.baseurl}}/assets/img/blog-image.png",
                         "width": "600",
                         "height": "315"
                     }

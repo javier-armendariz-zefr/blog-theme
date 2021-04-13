@@ -1,13 +1,11 @@
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: Zefr Engineering Blog
+title: Zefr | Engineering Blog
+description: Technical, cultural, and philosophical musings by Zefr engineering
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - python
+  - react
+  - frontend
+  - backend
 show_hero: true
 # menu:
 #   - title: Home
@@ -18,5 +16,5 @@ show_hero: true
 #     url: /contact
 #   - title: Feed
 #     url: /feed.xml
-email: youremail@test.com
-disqus_username: disqus_username
+email: javier.armendariz@zefr.com
+disqus_username:

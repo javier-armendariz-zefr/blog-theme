@@ -4,9 +4,10 @@ body {
 }
 
 .bar-header {
-  background-color: $primaryDark;
+  // background-color: $primaryDark;
+  background: linear-gradient(to right, #02e1d9, #1ab8f7);
   padding: rem(10px) rem(15px);
-  position: fixed;
+  // position: fixed;
   left: 0;
   width: 100%;
   z-index: 10;

@@ -4,6 +4,7 @@
 
 $themeColor: map-get($theme, themeColor) !default;
 $primaryDark: map-get($theme, primaryDark) !default;
+$secondaryDark: map-get($theme, secondaryDark) !default;
 $accentDark: map-get($theme, accentDark) !default;
 $lightGray: map-get($theme, lightGray) !default;
 $texts: map-get($theme, texts) !default;

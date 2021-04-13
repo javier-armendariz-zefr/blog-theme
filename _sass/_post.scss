@@ -1,9 +1,10 @@
 .post {
   position: relative;
-  top: rem(30px);
+  // top: rem(30px);
+  background-color: $primaryDark;
 
   @include media(">=sm") {
-    top: rem(50px);
+    // top: rem(50px);
   }
 }
 
@@ -81,10 +82,16 @@
     }
   }
 
-  h1.post-title {
+  h1.post-title,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     line-height: 1.2;
     margin: rem(5px) auto rem(10px);
     padding-top: 0;
+    color: $accentDark;
   }
 
   p.post-subtitle {

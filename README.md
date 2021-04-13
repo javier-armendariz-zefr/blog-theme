@@ -86,7 +86,7 @@ $ gem install jekflix
 
 ### Theme Colors
 
-Create the file `/blog-theme/assets/css/styles.scss` and add:
+Create the file `/assets/css/styles.scss` and add:
 
 ```
 ---
