@@ -22,7 +22,8 @@ footer {
 
   p {
     text-decoration: none;
-    color: $primaryDark;
+    color: $texts;
+    text-align: center;
     font-size: rem(16px);
     line-height: rem(25px);
   }
@@ -89,9 +90,5 @@ footer {
   footer {
     background: $primaryDark;
     border-top: 1px solid lighten($primaryDark, 10%);
-
-    p {
-      color: $accentDark;
-    }
   }
 }

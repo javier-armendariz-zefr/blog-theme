@@ -206,28 +206,28 @@
             <loc>/blog-theme/hero/view-all/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-            <lastmod>2019-05-16</lastmod>
+            <lastmod>2021-04-14</lastmod>
         </url>
     
         <url>
             <loc>/blog-theme/hero/2/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-            <lastmod>2019-05-16</lastmod>
+            <lastmod>2021-04-14</lastmod>
         </url>
     
         <url>
             <loc>/blog-theme/hero/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-            <lastmod>2019-05-16</lastmod>
+            <lastmod>2021-04-14</lastmod>
         </url>
     
         <url>
             <loc>/blog-theme/schema-management-and-serialization-with-apache-avro/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-            <lastmod>2018-11-22</lastmod>
+            <lastmod>2020-07-22</lastmod>
         </url>
     
         <url>

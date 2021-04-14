@@ -63,8 +63,11 @@ function jekyll(done) {
 function server(done) {
   browserSync({
     server: {
-      baseDir: "_site"
-    }
+      routes: {
+        "/blog-theme": "_site"
+      }
+    },
+    startPath: "/blog-theme"
   });
   done();
 }

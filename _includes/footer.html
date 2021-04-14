@@ -26,7 +26,7 @@
         </a>
       {% endif %}
       {% if site.linkedin_username %}
-        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
+        <a href="https://www.linkedin.com/{{ site.linkedin_username }}" title="LinkedIn">
           <svg><use xlink:href="#icon-linkedin"></use></svg>
         </a>
       {% endif %}
@@ -34,8 +34,11 @@
 
     {% include links.html %}
 
-    <p>
+    <!-- <p>
       <span>Jekflix</span> was made with <svg class="love"><use xlink:href="#icon-heart"></use></svg> by <a href="https://rossener.com" target="_blank" class="creator">Thiago Rossener</a>
+    </p> -->
+    <p>
+      Technical, cultural, and philosophical musings by Zefr engineering
     </p>
 </footer>
 
@@ -56,7 +59,7 @@
     {% assign social_urls = social_urls | append: '"https://www.instagram.com/' | append: site.instagram_username | append: '",' %}
 {% endif %}
 {% if site.linkedin_username %}
-    {% assign social_urls = social_urls | append: '"https://www.linkedin.com/in/' | append: site.linkedin_username | append: '",' %}
+    {% assign social_urls = social_urls | append: '"https://www.linkedin.com/' | append: site.linkedin_username | append: '",' %}
 {% endif %}
 
 <script type="application/ld+json">
@@ -82,7 +85,7 @@
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 <!-- Include the website scripts -->
-<script src="{{ '/blog-theme/assets/js/scripts.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/assets/js/scripts.min.js' | prepend: site.baseurl }}"></script>
 
 <!-- Include Google Analytics script -->
 {% include stats.html %}

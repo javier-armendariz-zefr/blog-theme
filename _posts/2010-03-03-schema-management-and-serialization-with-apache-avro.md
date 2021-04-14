@@ -1,5 +1,5 @@
 ---
-date: 2018-11-22 12:26:40
+date: 2020-07-22
 layout: post
 title: Schema Management and Serialization with Apache Avro
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
