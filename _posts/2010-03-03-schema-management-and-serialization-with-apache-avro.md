@@ -28,7 +28,7 @@ Zefr is a contextual advertising company ingesting hundreds of millions of event
 
 We settled on Apache Kafka as the message broker technology early in the process. This was due to a combination of in-house expertise, community support, technical maturity, and performance. There is much more to say about Apache Kafka and our experiences with the technology, which we will defer to a later time. Importantly for this selection process, the choice of broker helped to inform and constrain our options with respect to serialization format.
 
-<!-- ![Image](/blog-theme/assets/img/posts/schema-management-with-avro/avro_evolution.jpg) -->
+![Image](https://javier-armendariz-zefr.github.io/blog-theme/assets/img/posts/schema-management-with-avro/avro_evolution.jpg)
 
 More stressful for us than choosing the message broker was committing to a message serialization format. We performed an initial discovery process to get a list of our options. JSON and Google Protocol Buffers (protobuf) were both already in use at the company, and the choice was up to the project technical lead. JSON lacked a complete story around schema evolution and we had encountered numerous issues with data integrity. Our choice quickly narrowed to Protobuf or Avro.
 
@@ -52,9 +52,7 @@ Avro came out on top in these comparisions and had great space and parsing effic
 
 The next issue would be managing schemas to share across the entire org. Kafka Schema Registry allows for producers to publish new schemas with a unique schema id for clients to be configured to look for but we also wanted more protection from accidental schema updates. We additionally required that dynamic language clients be able to fetch the schema from the repository at run time, static language clients link to released versions of their classes at compile time, and producers either contain a particular schema in their build or fetch by a schema name and version from the schema registry.
 
-<!-- ![Image](/blog-theme/assets/img/posts/schema-management-with-avro/full_diagram3.png) -->
-
-![Image](/blog-theme/assets/img/authors/wesleytanner.jpeg)
+![Image](https://javier-armendariz-zefr.github.io/blog-theme/assets/img/posts/schema-management-with-avro/full_diagram3.png)
 
 There are two high-level approaches to generating Avro schemas: by hand or generated from code. We hand-write avdl files, which don’t look too far removed from Python dictionaries. A JSON format (AVSC) exists for Avro as well but it is difficult for a human to read and write due to its verbosity. Zefr is a heavy user of the Python serialization library Marshmallow for its HTTP APIs, and alternatively we could have written schemas in Python and converted them to Avro. However we liked having a format that was equally accessible to developers of any language. The IDL is simple enough that non-technical teammates at Zefr have reviewed these schemas. Here is an example:
 
