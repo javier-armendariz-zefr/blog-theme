@@ -135,7 +135,7 @@ function mainJs() {
     .pipe(concat("scripts.min.js"))
     .pipe(plumber())
     .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("_site/assets/js/"))
+    .pipe(gulp.dest("_site/blog-theme/assets/js/"))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(gulp.dest("assets/js"));
 }

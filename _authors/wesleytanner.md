@@ -1,6 +1,6 @@
 ---
 layout: author
-photo: /assets/img/authors/wesleytanner.jpeg
+photo: /blog-theme/assets/img/authors/wesleytanner.jpeg
 name: wesleytanner
 display_name: Wesley Tanner
 position: Chief Editor

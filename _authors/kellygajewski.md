@@ -1,6 +1,6 @@
 ---
 layout: author
-photo: /assets/img/authors/kellygajewski.png
+photo: /blog-theme/assets/img/authors/kellygajewski.png
 name: kellygajewski
 display_name: Kelly Gajewski
 position: Chief Editor

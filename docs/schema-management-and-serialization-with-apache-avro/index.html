@@ -44,14 +44,14 @@
     
     <!-- Apple Touch Icons -->
     <link rel="apple-touch-icon" href="/blog-theme/assets/img/icons/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/blog-theme/assets/img/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/blog-theme/assets/img/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/blog-theme/assets/img/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/blog-theme/assets/img/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/blog-theme/assets/img/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/blog-theme/assets/img/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/blog-theme/assets/img/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/blog-theme/assets/img/icons/apple-touch-icon-152x152.png" />
 
     <!-- Windows 8 Tile Icons -->
     <meta name="application-name" content="Zefr Engineering Blog">
@@ -197,7 +197,7 @@ November 22, 2018
 
 <p>We settled on Apache Kafka as the message broker technology early in the process. This was due to a combination of in-house expertise, community support, technical maturity, and performance. There is much more to say about Apache Kafka and our experiences with the technology, which we will defer to a later time. Importantly for this selection process, the choice of broker helped to inform and constrain our options with respect to serialization format.</p>
 
-<p><img src="/engineering-blog/assets/img/avro_evolution.jpg" alt="Image" /></p>
+<p><img src="/engineering-blog/blog-theme/assets/img/avro_evolution.jpg" alt="Image" /></p>
 
 <p>More stressful for us than choosing the message broker was committing to a message serialization format. We performed an initial discovery process to get a list of our options. JSON and Google Protocol Buffers (protobuf) were both already in use at the company, and the choice was up to the project technical lead. JSON lacked a complete story around schema evolution and we had encountered numerous issues with data integrity. Our choice quickly narrowed to Protobuf or Avro.</p>
 
@@ -221,7 +221,7 @@ November 22, 2018
 
 <p>The next issue would be managing schemas to share across the entire org. Kafka Schema Registry allows for producers to publish new schemas with a unique schema id for clients to be configured to look for but we also wanted more protection from accidental schema updates. We additionally required that dynamic language clients be able to fetch the schema from the repository at run time, static language clients link to released versions of their classes at compile time, and producers either contain a particular schema in their build or fetch by a schema name and version from the schema registry.</p>
 
-<p><img src="/engineering-blog/assets/full_diagram3.png" alt="Image" /></p>
+<p><img src="/engineering-blog/blog-theme/assets/full_diagram3.png" alt="Image" /></p>
 
 <p>There are two high-level approaches to generating Avro schemas: by hand or generated from code. We hand-write avdl files, which don’t look too far removed from Python dictionaries. A JSON format (AVSC) exists for Avro as well but it is difficult for a human to read and write due to its verbosity. Zefr is a heavy user of the Python serialization library Marshmallow for its HTTP APIs, and alternatively we could have written schemas in Python and converted them to Avro. However we liked having a format that was equally accessible to developers of any language. The IDL is simple enough that non-technical teammates at Zefr have reviewed these schemas. Here is an example:</p>
 
@@ -364,7 +364,7 @@ Name of the source app
   <section class="author">
     <div class="details">
       
-      <img class="img-rounded" src="/assets/img/authors/kellygajewski.png" alt="Kelly Gajewski">
+      <img class="img-rounded" src="/blog-theme/assets/img/authors/kellygajewski.png" alt="Kelly Gajewski">
       
       <p class="def">Author</p>
       <h3 class="name">
@@ -421,7 +421,7 @@ Name of the source app
   <section class="author">
     <div class="details">
       
-      <img class="img-rounded" src="/assets/img/authors/wesleytanner.jpeg" alt="Wesley Tanner">
+      <img class="img-rounded" src="/blog-theme/assets/img/authors/wesleytanner.jpeg" alt="Wesley Tanner">
       
       <p class="def">Author</p>
       <h3 class="name">
@@ -493,7 +493,7 @@ Name of the source app
       "@type": "Person",
       "name": "Kelly Gajewski",
       
-      "image": "/assets/img/authors/kellygajewski.png",
+      "image": "/blog-theme/assets/img/authors/kellygajewski.png",
       
       "jobTitle": "Chief Editor",
       "url": "/blog-theme/authors/kellygajewski/",
@@ -775,7 +775,7 @@ References
                 "@type": "Person",
                 "name": "Kelly Gajewski",
                 
-                "image": "/assets/img/authors/kellygajewski.png",
+                "image": "/blog-theme/assets/img/authors/kellygajewski.png",
                 
                 "jobTitle": "Chief Editor",
                 "url": "/blog-theme/authors/kellygajewski/",

@@ -4,7 +4,7 @@
   );
   for (var i = 0; i < headings.length; i++) {
     var img = document.createElement("img");
-    img.setAttribute("src", "/assets/img/link-symbol.svg");
+    img.setAttribute("src", "/blog-theme/assets/img/link-symbol.svg");
 
     var a = document.createElement("a");
     a.setAttribute("href", "#" + headings[i].getAttribute("id"));
