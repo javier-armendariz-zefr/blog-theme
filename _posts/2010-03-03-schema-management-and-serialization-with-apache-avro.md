@@ -28,7 +28,7 @@ Zefr is a contextual advertising company ingesting hundreds of millions of event
 
 We settled on Apache Kafka as the message broker technology early in the process. This was due to a combination of in-house expertise, community support, technical maturity, and performance. There is much more to say about Apache Kafka and our experiences with the technology, which we will defer to a later time. Importantly for this selection process, the choice of broker helped to inform and constrain our options with respect to serialization format.
 
-![Avro evolution](https://javier-armendariz-zefr.github.io/blog-theme/assets/img/posts/schema-management-with-avro/avro_evolution.jpg)
+![Avro evolution](https://javier-armendariz-zefr.github.io/blog-theme/assets/img/posts/schema-management-with-avro/avro_evolution.jpeg)
 
 More stressful for us than choosing the message broker was committing to a message serialization format. We performed an initial discovery process to get a list of our options. JSON and Google Protocol Buffers (protobuf) were both already in use at the company, and the choice was up to the project technical lead. JSON lacked a complete story around schema evolution and we had encountered numerous issues with data integrity. Our choice quickly narrowed to Protobuf or Avro.
 
