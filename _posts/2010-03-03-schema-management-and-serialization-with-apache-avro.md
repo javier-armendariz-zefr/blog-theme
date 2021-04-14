@@ -4,7 +4,7 @@ layout: post
 title: Schema Management and Serialization with Apache Avro
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 description: The selection of a data serialization and schema management framework was an important freedom of choice[1] for our organization. During the process, we found ourselves in analysis paralysis [2] due to the number of options, our historical baggage, and competing opinions in the community.
-image: /blog-theme/assets/img/apache-avro.jpg
+image: https://javier-armendariz-zefr.github.io/blog-theme/assets/img/apache-avro.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme9_v273a9.jpg
 category: life
 tags:
