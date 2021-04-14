@@ -282,6 +282,10 @@ collections:
             name: "primaryDark"
             widget: "color"
             default: "#141414"
+          - label: "Secondary Dark Color"
+            name: "secondaryDark"
+            widget: "color"
+            default: "#132035"
           - label: "Accent Dark Color"
             name: "accentDark"
             default: "#ffffff"
@@ -510,5 +514,3 @@ collections:
             name: "sent_message_url"
             hint: "URL where the user will be redirected for after submit the contact form. Ex: /contact/message-sent/"
             required: false
-
-
