@@ -4,8 +4,8 @@ layout: post
 title: Example of GPU usage in Metaflow
 subtitle:
 description: GPU usage for deep learning is not trivial in Metaflow due to the fact that one needs to install CUDA in a correct way and expose the GPU hardwares to the container that runs Metaflow steps.
-image: /assets/img/posts/example-of-gpu-usage-in-metaflow/metaflow.jpg
-optimized_image: /assets/img/posts/example-of-gpu-usage-in-metaflow/metaflow.jpg
+image: /blog-theme/assets/img/posts/example-of-gpu-usage-in-metaflow/metaflow.jpg
+optimized_image: /blog-theme/assets/img/posts/example-of-gpu-usage-in-metaflow/metaflow.jpg
 category: life
 tags:
   - python
@@ -204,7 +204,7 @@ Bootstrapping conda environment...(this could take a few minutes)
 </details>
 
 Some key information to check from the above output is
-![img.png](/assets/img/posts/example-of-gpu-usage-in-metaflow/test_gpu_script_output.png)
+![img.png](/blog-theme/assets/img/posts/example-of-gpu-usage-in-metaflow/test_gpu_script_output.png)
 
 ## How does it work?
 
@@ -213,7 +213,7 @@ Some key information to check from the above output is
 The `NVIDIA-SMI` (represents the installation of NVIDIA driver) is obtained at EC2 instance level. Metaflow automatically picks an AMI with NVIDIA driver installed for your batch job when you request `resources(gpu=N)`. **Note that this WILL NOT happen if you don't have P2 or P3 instances in your Metaflow compute environment**
 
 How to check P-series instances? Simply look at your compute environment
-![img_1.png](/assets/img/posts/example-of-gpu-usage-in-metaflow/compute_env_instances.png)
+![img_1.png](/blog-theme/assets/img/posts/example-of-gpu-usage-in-metaflow/compute_env_instances.png)
 
 ### CUDA Toolkit
 

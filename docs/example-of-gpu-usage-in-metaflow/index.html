@@ -27,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Example of GPU usage in Metaflow | Zefr Engineering Blog">
     <meta name="twitter:description" content="GPU usage for deep learning is not trivial in Metaflow due to the fact that one needs to install CUDA in a correct way and expose the GPU hardwares to the co...">
-    <meta property="twitter:image:src" content="/assets/img/posts/example-of-gpu-usage-in-metaflow/metaflow.jpg">
+    <meta property="twitter:image:src" content="/blog-theme/assets/img/posts/example-of-gpu-usage-in-metaflow/metaflow.jpg">
     
         <meta name="twitter:site" content="@zefrinc">
     
@@ -35,7 +35,7 @@
     <!-- Social: Facebook / Open Graph -->
     <meta property="og:url" content="/blog-theme/example-of-gpu-usage-in-metaflow/">
     <meta property="og:title" content="Example of GPU usage in Metaflow | Zefr Engineering Blog">
-    <meta property="og:image" content="/assets/img/posts/example-of-gpu-usage-in-metaflow/metaflow.jpg">
+    <meta property="og:image" content="/blog-theme/assets/img/posts/example-of-gpu-usage-in-metaflow/metaflow.jpg">
     <meta property="og:description" content="GPU usage for deep learning is not trivial in Metaflow due to the fact that one needs to install CUDA in a correct way and expose the GPU hardwares to the co...">
     <meta property="og:site_name" content="Zefr | Engineering Blog">
 
@@ -173,7 +173,7 @@ July 21, 2020
                 <p class="post-subtitle"></p>
 
                 
-                    <img src="/assets/img/posts/example-of-gpu-usage-in-metaflow/metaflow.jpg" alt="Featured image" class="post-cover">
+                    <img src="/blog-theme/assets/img/posts/example-of-gpu-usage-in-metaflow/metaflow.jpg" alt="Featured image" class="post-cover">
                 
 
                 <!-- Pagination links -->
@@ -372,7 +372,7 @@ Bootstrapping conda environment...(this could take a few minutes)
 </details>
 
 <p>Some key information to check from the above output is
-<img src="/assets/img/posts/example-of-gpu-usage-in-metaflow/test_gpu_script_output.png" alt="img.png" /></p>
+<img src="/blog-theme/assets/img/posts/example-of-gpu-usage-in-metaflow/test_gpu_script_output.png" alt="img.png" /></p>
 
 <h2 id="how-does-it-work">How does it work?</h2>
 <h3 id="nvidia-driver">NVIDIA Driver</h3>
@@ -380,7 +380,7 @@ Bootstrapping conda environment...(this could take a few minutes)
 <p>The <code class="language-plaintext highlighter-rouge">NVIDIA-SMI</code> (represents the installation of NVIDIA driver) is obtained at EC2 instance level. Metaflow automatically picks an AMI with NVIDIA driver installed for your batch job when you request <code class="language-plaintext highlighter-rouge">resources(gpu=N)</code>. <strong>Note that this WILL NOT happen if you don’t have P2 or P3 instances in your Metaflow compute environment</strong></p>
 
 <p>How to check P-series instances? Simply look at your compute environment
-<img src="/assets/img/posts/example-of-gpu-usage-in-metaflow/compute_env_instances.png" alt="img_1.png" /></p>
+<img src="/blog-theme/assets/img/posts/example-of-gpu-usage-in-metaflow/compute_env_instances.png" alt="img_1.png" /></p>
 
 <h3 id="cuda-toolkit">CUDA Toolkit</h3>
 
@@ -890,7 +890,7 @@ https://gitter.im/metaflow_org/community?at=6037f8d9cdbfc0620c2aedf2</p>
             "name": "Example of GPU usage in Metaflow",
             "headline": "",
             "description": "GPU usage for deep learning is not trivial in Metaflow due to the fact that one needs to install CUDA in a correct way and expose the GPU hardwares to the container that runs Metaflow steps.",
-            "image": "/assets/img/posts/example-of-gpu-usage-in-metaflow/metaflow.jpg",
+            "image": "/blog-theme/assets/img/posts/example-of-gpu-usage-in-metaflow/metaflow.jpg",
             "url": "/blog-theme/example-of-gpu-usage-in-metaflow/",
             "articleBody": "The test_metaflow_gpu.py contains an example of how to allocate
 GPU resources and make use of it for deep learning in Metaflow.
