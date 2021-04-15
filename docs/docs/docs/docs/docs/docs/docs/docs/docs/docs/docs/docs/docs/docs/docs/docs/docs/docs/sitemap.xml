@@ -106,6 +106,14 @@
         </url>
     
         <url>
+            <loc>/assets/css/preview.css</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
             <loc>/blog-theme/assets/css/preview.css</loc>
             
                 <changefreq>monthly</changefreq>
@@ -131,6 +139,14 @@
     
         <url>
             <loc>/staff/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/assets/css/styles.css</loc>
             
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
