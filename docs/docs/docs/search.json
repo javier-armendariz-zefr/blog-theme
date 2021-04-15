@@ -19,6 +19,14 @@
     } ,
   
     {
+      "title"    : "Example of GPU usage in Metaflow",
+      "tags"     : "python",
+      "categories" : "life",
+      "url"      : "/blog-theme/example-of-gpu-usage-in-metaflow/",
+      "date"     : "07/21/2020"
+    } ,
+  
+    {
       "title"    : "The quick brown fox jumps over a lazy dog",
       "tags"     : "css and tips",
       "categories" : "css",

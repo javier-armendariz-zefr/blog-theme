@@ -5,16 +5,16 @@
     <description>Technical, cultural, and philosophical musings by Zefr engineering</description>
     <link>/blog-theme/</link>
     <atom:link href="/blog-theme/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Apr 2021 17:27:52 -0700</pubDate>
-    <lastBuildDate>Wed, 14 Apr 2021 17:27:52 -0700</lastBuildDate>
+    <pubDate>Wed, 14 Apr 2021 18:08:44 -0700</pubDate>
+    <lastBuildDate>Wed, 14 Apr 2021 18:08:44 -0700</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
     
       <item>
         <title>Zefr Engineering Blog</title>
         <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
         <pubDate>Wed, 14 Apr 2021 00:00:00 -0700</pubDate>
-        <link>/blog-theme/hero/view-all/</link>
-        <guid isPermaLink="true">/blog-theme/hero/view-all/</guid>
+        <link>/blog-theme/hero/</link>
+        <guid isPermaLink="true">/blog-theme/hero/</guid>
         
         <category>welcome</category>
         
@@ -41,14 +41,40 @@
         <title>Zefr Engineering Blog</title>
         <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
         <pubDate>Wed, 14 Apr 2021 00:00:00 -0700</pubDate>
-        <link>/blog-theme/hero/</link>
-        <guid isPermaLink="true">/blog-theme/hero/</guid>
+        <link>/blog-theme/hero/view-all/</link>
+        <guid isPermaLink="true">/blog-theme/hero/view-all/</guid>
         
         <category>welcome</category>
         
         <category>blog</category>
         
         <category>blog</category>
+      </item>
+    
+      <item>
+        <title>Designing a React Component with a Finite State Machine</title>
+        <description>&lt;p&gt;The selection of a data serialization and schema management framework was an important freedom of choice[1] for our organization. During the process, we found ourselves in analysis paralysis [2] due to the number of options, our historical baggage, and competing opinions in the community. Ultimately, we believe the most important choice we made was to deliberately invest in solving this problem, regardless of the solution. It is our hope that this reflection on our journey is useful to others faced with a similar choice.&lt;/p&gt; &lt;!--page--&gt; &lt;p&gt;Unlike the choice of message broker, which we have found to be more easily replaced,...</description>
+        <pubDate>Tue, 13 Apr 2021 00:00:00 -0700</pubDate>
+        <link>/blog-theme/designing-a-react-component-with-a-finite-state-machine/</link>
+        <guid isPermaLink="true">/blog-theme/designing-a-react-component-with-a-finite-state-machine/</guid>
+        
+        <category>react</category>
+        
+        <category>frontend</category>
+        
+        <category>life</category>
+      </item>
+    
+      <item>
+        <title>Example of GPU usage in Metaflow</title>
+        <description>&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;test_metaflow_gpu.py&lt;/code&gt; contains an example of how to allocate GPU resources and make use of it for deep learning in Metaflow.&lt;/p&gt; &lt;p&gt;GPU usage for deep learning is not trivial in Metaflow due to the fact that one needs to install CUDA in a correct way and expose the GPU hardwares to the container that runs Metaflow steps.&lt;/p&gt; &lt;p&gt;Core setup (in Metaflow) is to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;resource(gpu=N)&lt;/code&gt; decorator for EC2 resources and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;batch(..., image=IMAGE_WITH_CUDA)&lt;/code&gt; decorator (or the use no image and set up CUDA/NVIDIA environment variables with &lt;a href=&quot;https://docs.metaflow.org/introduction/release-notes#2-2-8-mar-15th-2021&quot;&gt;Metaflow(&amp;gt;=2.2.8)&lt;/a&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@environment&lt;/code&gt; decorator) for...</description>
+        <pubDate>Mon, 12 Apr 2021 00:00:00 -0700</pubDate>
+        <link>/blog-theme/example-of-gpu-usage-in-metaflow/</link>
+        <guid isPermaLink="true">/blog-theme/example-of-gpu-usage-in-metaflow/</guid>
+        
+        <category>python</category>
+        
+        <category>life</category>
       </item>
     
       <item>
@@ -61,210 +87,6 @@
         <category>books</category>
         
         <category>read</category>
-        
-        <category>life</category>
-      </item>
-    
-      <item>
-        <title>Example of GPU usage in Metaflow</title>
-        <description>&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;test_metaflow_gpu.py&lt;/code&gt; contains an example of how to allocate GPU resources and make use of it for deep learning in Metaflow.&lt;/p&gt; &lt;p&gt;GPU usage for deep learning is not trivial in Metaflow due to the fact that one needs to install CUDA in a correct way and expose the GPU hardwares to the container that runs Metaflow steps.&lt;/p&gt; &lt;p&gt;Core setup (in Metaflow) is to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;resource(gpu=N)&lt;/code&gt; decorator for EC2 resources and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;batch(..., image=IMAGE_WITH_CUDA)&lt;/code&gt; decorator (or the use no image and set up CUDA/NVIDIA environment variables with &lt;a href=&quot;https://docs.metaflow.org/introduction/release-notes#2-2-8-mar-15th-2021&quot;&gt;Metaflow(&amp;gt;=2.2.8)&lt;/a&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@environment&lt;/code&gt; decorator) for...</description>
-        <pubDate>Tue, 21 Jul 2020 00:00:00 -0700</pubDate>
-        <link>/blog-theme/example-of-gpu-usage-in-metaflow/</link>
-        <guid isPermaLink="true">/blog-theme/example-of-gpu-usage-in-metaflow/</guid>
-        
-        <category>python</category>
-        
-        <category>life</category>
-      </item>
-    
-      <item>
-        <title>The quick brown fox jumps over a lazy dog</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Tue, 09 Oct 2018 05:26:40 -0700</pubDate>
-        <link>/blog-theme/the-quick-brown-fox-jumps-over-a-lazy-dog/</link>
-        <guid isPermaLink="true">/blog-theme/the-quick-brown-fox-jumps-over-a-lazy-dog/</guid>
-        
-        <category>css</category>
-        
-        <category>tips</category>
-        
-        <category>css</category>
-      </item>
-    
-      <item>
-        <title>A wonderful serenity has taken possession of my entire soul</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Fri, 20 Jul 2018 05:26:40 -0700</pubDate>
-        <link>/blog-theme/a-wonderful-serenity-has-taken-possession-of-my-entire-soul/</link>
-        <guid isPermaLink="true">/blog-theme/a-wonderful-serenity-has-taken-possession-of-my-entire-soul/</guid>
-        
-        <category>platform</category>
-        
-        <category>javascript</category>
-        
-        <category>vscode</category>
-        
-        <category>code</category>
-      </item>
-    
-      <item>
-        <title>Candy, candies, candy!</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Sat, 21 Apr 2018 05:26:40 -0700</pubDate>
-        <link>/blog-theme/candy-candies-candy/</link>
-        <guid isPermaLink="true">/blog-theme/candy-candies-candy/</guid>
-        
-        <category>food</category>
-        
-        <category>tips</category>
-        
-        <category>diet</category>
-      </item>
-    
-      <item>
-        <title>Trust me, it will work</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Mon, 12 Mar 2018 05:26:40 -0700</pubDate>
-        <link>/blog-theme/trust-me-it-will-work/</link>
-        <guid isPermaLink="true">/blog-theme/trust-me-it-will-work/</guid>
-        
-        <category>languages</category>
-        
-        <category>tips</category>
-        
-        <category>tips</category>
-      </item>
-    
-      <item>
-        <title>How to turn your dog into a Jedi master</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Sat, 03 Feb 2018 04:26:40 -0800</pubDate>
-        <link>/blog-theme/how-to-turn-your-dog-into-a-jedi-master/</link>
-        <guid isPermaLink="true">/blog-theme/how-to-turn-your-dog-into-a-jedi-master/</guid>
-        
-        <category>jedi</category>
-        
-        <category>doggo</category>
-        
-        <category>starwars</category>
-        
-        <category>tutorial</category>
-      </item>
-    
-      <item>
-        <title>Let flexbox work for you or perish</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Mon, 14 Aug 2017 15:55:45 -0700</pubDate>
-        <link>/blog-theme/let-flexbox-work-for-you-or-perish/</link>
-        <guid isPermaLink="true">/blog-theme/let-flexbox-work-for-you-or-perish/</guid>
-        
-        <category>css</category>
-        
-        <category>frontend</category>
-        
-        <category>css</category>
-      </item>
-    
-      <item>
-        <title>A star has fallen from the sky and the cat ate it</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Mon, 07 Aug 2017 16:04:08 -0700</pubDate>
-        <link>/blog-theme/a-star-has-fallen-from-the-sky-and-the-cat-ate-it/</link>
-        <guid isPermaLink="true">/blog-theme/a-star-has-fallen-from-the-sky-and-the-cat-ate-it/</guid>
-        
-        <category>crazy</category>
-        
-        <category>story</category>
-        
-        <category>music</category>
-      </item>
-    
-      <item>
-        <title>Smoke alert</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Sat, 29 Jul 2017 06:24:49 -0700</pubDate>
-        <link>/blog-theme/smoke-alert/</link>
-        <guid isPermaLink="true">/blog-theme/smoke-alert/</guid>
-        
-        <category>jekyll</category>
-        
-        <category>wordpress</category>
-        
-        <category>blog</category>
-        
-        <category>blog</category>
-      </item>
-    
-      <item>
-        <title>Do you believe that a spider can dance?</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Thu, 08 Jun 2017 05:00:00 -0700</pubDate>
-        <link>/blog-theme/do-you-believe-that-a-spider-can-dance/</link>
-        <guid isPermaLink="true">/blog-theme/do-you-believe-that-a-spider-can-dance/</guid>
-        
-        <category>fate</category>
-        
-        <category>travel</category>
-        
-        <category>travel</category>
-      </item>
-    
-      <item>
-        <title>A cook cries in the rain at night</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Sun, 04 Jun 2017 05:00:00 -0700</pubDate>
-        <link>/blog-theme/a-cook-cries-in-the-rain-at-night/</link>
-        <guid isPermaLink="true">/blog-theme/a-cook-cries-in-the-rain-at-night/</guid>
-        
-        <category>cook</category>
-        
-        <category>cucine</category>
-        
-        <category>story</category>
-        
-        <category>diet</category>
-      </item>
-    
-      <item>
-        <title>Grab your band and get out</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Thu, 11 May 2017 05:00:00 -0700</pubDate>
-        <link>/blog-theme/grab-your-band-and-get-out/</link>
-        <guid isPermaLink="true">/blog-theme/grab-your-band-and-get-out/</guid>
-        
-        <category>music</category>
-        
-        <category>band</category>
-        
-        <category>passion</category>
-        
-        <category>music</category>
-      </item>
-    
-      <item>
-        <title>Passion is dangerous, go for it!</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Sun, 06 Sep 2015 05:00:00 -0700</pubDate>
-        <link>/blog-theme/passion-is-dangerous-go-for-it/</link>
-        <guid isPermaLink="true">/blog-theme/passion-is-dangerous-go-for-it/</guid>
-        
-        <category>work</category>
-        
-        <category>career</category>
-        
-        <category>work</category>
-      </item>
-    
-      <item>
-        <title>Birds can fly, but this you knew already</title>
-        <description>&lt;p&gt;Cas sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt; &lt;/blockquote&gt; &lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt; &lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt; &lt;p&gt;HTML defines a long list of available inline tags, a complete list of...</description>
-        <pubDate>Fri, 10 Sep 2010 05:26:40 -0700</pubDate>
-        <link>/blog-theme/birds-can-fly-but-this-you-knew-already/</link>
-        <guid isPermaLink="true">/blog-theme/birds-can-fly-but-this-you-knew-already/</guid>
-        
-        <category>life</category>
-        
-        <category>tips</category>
         
         <category>life</category>
       </item>

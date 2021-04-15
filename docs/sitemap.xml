@@ -203,7 +203,7 @@
     
     
         <url>
-            <loc>/blog-theme/hero/view-all/</loc>
+            <loc>/blog-theme/hero/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2021-04-14</lastmod>
@@ -217,10 +217,24 @@
         </url>
     
         <url>
-            <loc>/blog-theme/hero/</loc>
+            <loc>/blog-theme/hero/view-all/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2021-04-14</lastmod>
+        </url>
+    
+        <url>
+            <loc>/blog-theme/designing-a-react-component-with-a-finite-state-machine/</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+            <lastmod>2021-04-13</lastmod>
+        </url>
+    
+        <url>
+            <loc>/blog-theme/example-of-gpu-usage-in-metaflow/</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+            <lastmod>2021-04-12</lastmod>
         </url>
     
         <url>
@@ -230,104 +244,12 @@
             <lastmod>2020-07-22</lastmod>
         </url>
     
-        <url>
-            <loc>/blog-theme/example-of-gpu-usage-in-metaflow/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2020-07-21</lastmod>
-        </url>
     
         <url>
-            <loc>/blog-theme/the-quick-brown-fox-jumps-over-a-lazy-dog/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2018-10-09</lastmod>
+            <loc>/blog-theme/authors/javierarmendariz/</loc>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
         </url>
-    
-        <url>
-            <loc>/blog-theme/a-wonderful-serenity-has-taken-possession-of-my-entire-soul/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2018-07-20</lastmod>
-        </url>
-    
-        <url>
-            <loc>/blog-theme/candy-candies-candy/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2018-04-21</lastmod>
-        </url>
-    
-        <url>
-            <loc>/blog-theme/trust-me-it-will-work/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2018-03-12</lastmod>
-        </url>
-    
-        <url>
-            <loc>/blog-theme/how-to-turn-your-dog-into-a-jedi-master/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2018-02-03</lastmod>
-        </url>
-    
-        <url>
-            <loc>/blog-theme/let-flexbox-work-for-you-or-perish/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2017-08-14</lastmod>
-        </url>
-    
-        <url>
-            <loc>/blog-theme/a-star-has-fallen-from-the-sky-and-the-cat-ate-it/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2017-08-07</lastmod>
-        </url>
-    
-        <url>
-            <loc>/blog-theme/smoke-alert/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2017-07-29</lastmod>
-        </url>
-    
-        <url>
-            <loc>/blog-theme/do-you-believe-that-a-spider-can-dance/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2017-06-08</lastmod>
-        </url>
-    
-        <url>
-            <loc>/blog-theme/a-cook-cries-in-the-rain-at-night/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2017-06-04</lastmod>
-        </url>
-    
-        <url>
-            <loc>/blog-theme/grab-your-band-and-get-out/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2017-05-11</lastmod>
-        </url>
-    
-        <url>
-            <loc>/blog-theme/passion-is-dangerous-go-for-it/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2015-09-06</lastmod>
-        </url>
-    
-        <url>
-            <loc>/blog-theme/birds-can-fly-but-this-you-knew-already/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2010-09-10</lastmod>
-        </url>
-    
     
         <url>
             <loc>/blog-theme/authors/kellygajewski/</loc>
