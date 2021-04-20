@@ -85,7 +85,51 @@ Anytime we add a new post or draft, we need to change the date in the **Hero Pos
 
 ![Hero post](/readme/hero-post.png)
 
+## 🎁 Assets
+
+### Post images
+
+The post images should be under its own post folder (/assets/img/posts/{post-name}), and both the pictures and folder should be Kebab cased.
+
+Example:
+
+/assets/img/posts/a-post-directory-name-here/an-image-goes-here.png
+
+```
+assets
+├── img
+|  ├── posts
+|  |  ├── a-post-directory-name-here
+|  |  |  ├── an-image-goes-here.png
+|  |  |  ├── another-image-also-could-goes-here.jpg
+...
+```
+
+## ✍️ Authors
+
+To add a new author follow [this](https://jekyllrb.com/docs/step-by-step/09-collections/#add-authors).
+
+### Author picture
+
+You can place your picture right here:
+(/assets/img/authors/{authorname.imageextension})
+
+Example:
+/assets/img/authors/zexuanzhou.jpeg
+
+```
+assets
+├── img
+|  ├── authors
+|  |  ├── javierarmendariz.jpg
+|  |  ├── kellygajewski.png
+|  |  ├── wesleytanner.jpeg
+|  |  └── zexuanzhou.jpeg
+...
+```
+
 ## 🦉 ToDo
 
 - Migrate this blog to the [engineering-blog](https://github.com/ZEFR-INC/engineering-blog) repo
+- Add more authors
 - To configure Jenkins or some script to update the Hero post date automatically after merging a new post (\_posts/2021-04-14-a-new-post-goes-here.md)
